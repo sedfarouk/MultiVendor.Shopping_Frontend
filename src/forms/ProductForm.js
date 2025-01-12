@@ -46,7 +46,7 @@ const ProductForm = () => {
     if (id) {
       const fetchProduct = async () => {
         try {
-          const response = await axios.get(`https://multivendorapp-products-microservice.onrender.com/${id}`, {
+          const response = await axios.get(`https://multivendorsystem-products-service.onrender.com/${id}`, {
             headers: {
               Authorization: `Bearer ${authState.token}`,
             },
@@ -80,7 +80,7 @@ const handleImageUpload = async (event) => {
 
   try {
     const response = await axios.post(
-      'https://api.cloudinary.com/v1_1/dqwub0fhb/image/upload',
+      'https://api.cloudinary.com/v1_1/difhwvxoe/image/upload',
       formData
     );
     const uploadedImageUrl = response.data.secure_url;
@@ -113,8 +113,8 @@ const handleImageUpload = async (event) => {
 
     try {
       const url = id
-        ? `https://multivendorapp-products-microservice.onrender.com/product/${id}`
-        : 'https://multivendorapp-products-microservice.onrender.com/product/create';
+        ? `https://multivendorsystem-products-service.onrender.com/product/${id}`
+        : 'https://multivendorsystem-products-service.onrender.com/product/create';
       const method = id ? 'PUT' : 'POST';
 
       const response = await axios({

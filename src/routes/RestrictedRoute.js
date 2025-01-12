@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../authentication/AuthContext';
+import { useAuth } from '../accountManagement/AuthContext';
 
 const RestrictedRoute = ({ children }) => {
   const { authState } = useAuth();

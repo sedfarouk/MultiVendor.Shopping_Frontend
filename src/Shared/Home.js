@@ -169,7 +169,7 @@ const Home = () => {
 
       try {
         setIsLoading(true);
-        const response = await fetch('https://multivendorapp-user-service.onrender.com/profile', {
+        const response = await fetch('https://multivendorsystem-account-service.onrender.com/profile', {
           headers: {
             'Authorization': `Bearer ${authState.token}`,
             'Content-Type': 'application/json',
@@ -208,7 +208,7 @@ const Home = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch('https://multivendorapp-user-service.onrender.com/cart', {
+      const response = await fetch('https://multivendorsystem-account-service.onrender.comcart', {
         headers: {
           'Authorization': `Bearer ${authState.token}`,
           'Content-Type': 'application/json',

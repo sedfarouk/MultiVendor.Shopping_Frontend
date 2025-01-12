@@ -153,7 +153,7 @@ const ProductList = () => {
   useEffect(() => {
     const fetchProductsByCategory = async () => {
       try {
-        const response = await fetch(`https://multivendorapp-products-microservice.onrender.com/category/${type}`, {
+        const response = await fetch(`https://multivendorsystem-products-service.onrender.com/category/${type}`, {
           headers: {
             'Authorization': `Bearer ${authState.token}`, // Include the token in the headers
           },

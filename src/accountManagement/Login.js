@@ -19,7 +19,7 @@ const Login = () => {
 
     try {
       const response = await fetch(
-        'https://multivendorapp-user-service.onrender.com/login',
+        'https://multivendorsystem-account-service.onrender.com/login',
         {
           method: 'POST',
           headers: {

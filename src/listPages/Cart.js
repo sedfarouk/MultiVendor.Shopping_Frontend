@@ -23,7 +23,7 @@ const Cart = () => {
     const fetchCart = async () => {
         setLoading(true);
         try {
-            const response = await fetch('https://multivendorplatform-shopping-service.onrender.com/cart', {
+            const response = await fetch('https://multivendorsystem-shopping-service.onrender.com/cart', {
                 headers: { Authorization: `Bearer ${authState.token}` },
             });
             const data = await response.json();
@@ -59,7 +59,7 @@ const Cart = () => {
         };
 
         try {
-            await fetch('https://multivendorplatform-shopping-service.onrender.com/order', {
+            await fetch('https://multivendorsystem-shopping-service.onrender.com/order', {
                 method: 'POST',
                 headers: { 
                     'Content-Type': 'application/json',
